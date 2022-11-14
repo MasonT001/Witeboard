@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+.signup {
+  color: black !important;
+  text-decoration: none !important;
+  border-bottom: solid;
+  border-radius: 2px;
+}
+
+.about { 
+    color: black !important;
+    text-decoration: none !important;
+    border-bottom: solid;
+    border-radius: 2px;
+  }
+
+  .explore { 
+    color: black !important;
+    text-decoration: none !important;
+    border-bottom: solid;
+    border-radius: 2px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
