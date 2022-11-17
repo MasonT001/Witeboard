@@ -9,16 +9,14 @@ import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup-login.component';
 
 const routes: Routes = [
-  { path: 'home', component:  LandingPageComponent, pathMatch: 'full'},
-  { path: 'contests', component:  ContestsListComponent},  
-  { path: 'profile', component:  ProfileComponent},
-  { path: 'privacypolicy', component:  PrivacyPolicyComponent},
-  { path: 'categories', component:  CategoriesComponent},
-  { path: 'signup', component:  SignupComponent},
-  { path: 'about', component:  AboutComponent}
-
-
-
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: LandingPageComponent},
+  { path: 'contests', component: ContestsListComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'privacypolicy', component: PrivacyPolicyComponent },
+  { path: 'categories', component: CategoriesComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'about', component: AboutComponent }
 
 ];
 

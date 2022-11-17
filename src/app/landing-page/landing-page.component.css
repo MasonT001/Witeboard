@@ -1,0 +1,19 @@
+.col {
+    margin-bottom: 100px;
+    margin-top: 25px;
+}
+
+.button {
+    border: none;
+    color: white;
+    background-color: #9370db;
+    transition: .5s;
+    padding: 8px 12px;
+    border-radius: 4px
+}
+
+.button:hover{
+    color: rgb(219, 219, 219);
+    background-color: #643db3;
+    transition: .5s
+}
