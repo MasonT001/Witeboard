@@ -14,6 +14,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { AboutComponent } from './about/about.component';
+import { CompanyInfoComponent } from './company-info/company-info.component';
+import { TeamComponent } from './company-info/team/team.component';
+import { CareersComponent } from './company-info/careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { AboutComponent } from './about/about.component';
     LoginComponent,
     ProfileComponent,
     CategoriesComponent,
-    AboutComponent
+    AboutComponent,
+    CompanyInfoComponent,
+    TeamComponent,
+    CareersComponent
   ],
   imports: [
     BrowserModule,
