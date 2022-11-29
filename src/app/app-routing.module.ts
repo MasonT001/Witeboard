@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './company-info/about/about.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ContestsListComponent } from './contests-list/contests-list.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';

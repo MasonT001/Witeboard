@@ -13,10 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './company-info/about/about.component';
 import { CompanyInfoComponent } from './company-info/company-info.component';
-import { TeamComponent } from './company-info/team/team.component';
-import { CareersComponent } from './company-info/careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -32,9 +30,7 @@ import { CareersComponent } from './company-info/careers/careers.component';
     ProfileComponent,
     CategoriesComponent,
     AboutComponent,
-    CompanyInfoComponent,
-    TeamComponent,
-    CareersComponent
+    CompanyInfoComponent
   ],
   imports: [
     BrowserModule,
