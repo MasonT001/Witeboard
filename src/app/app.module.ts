@@ -15,6 +15,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { AboutComponent } from './company-info/about/about.component';
 import { CompanyInfoComponent } from './company-info/company-info.component';
+import { CompanyInfoNavComponent } from './company-info/company-info-nav/company-info-nav.component';
+import { PressComponent } from './company-info/press/press.component';
+import { ImpactComponent } from './company-info/impact/impact.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { CompanyInfoComponent } from './company-info/company-info.component';
     ProfileComponent,
     CategoriesComponent,
     AboutComponent,
-    CompanyInfoComponent
+    CompanyInfoComponent,
+    CompanyInfoNavComponent,
+    PressComponent,
+    ImpactComponent
   ],
   imports: [
     BrowserModule,

@@ -4,3 +4,23 @@ p {
     width: 100%;
     text-align: center;
 }
+
+
+nav {
+    -webkit-text-size-adjust: 100%;
+    --vh: 5.36px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    box-sizing: inherit;
+    display: block;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    padding-bottom: 24px !important;
+    padding-top: 36px !important;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF !important;
+    background-color: #2F466C !important;
+}
