@@ -13,7 +13,11 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './company-info/about/about.component';
+import { CompanyInfoComponent } from './company-info/company-info.component';
+import { CompanyInfoNavComponent } from './company-info/company-info-nav/company-info-nav.component';
+import { PressComponent } from './company-info/press/press.component';
+import { ImpactComponent } from './company-info/impact/impact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { AboutComponent } from './about/about.component';
     LoginComponent,
     ProfileComponent,
     CategoriesComponent,
-    AboutComponent
+    AboutComponent,
+    CompanyInfoComponent,
+    CompanyInfoNavComponent,
+    PressComponent,
+    ImpactComponent
   ],
   imports: [
     BrowserModule,
