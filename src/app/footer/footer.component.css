@@ -120,3 +120,30 @@ ul.wt-list-unstyled.wt-text-left-xs.wt-pl-xs-1.wt-pl-sm-0.wt-pr-xs-1 {
     text-align: left !important;
     list-style: none;
 }
+
+div.grid_col.grid_col--1-of-5{ 
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    font: inherit;
+    color: #333333;
+    font-family: 'Graphik Web', sans-serif;
+    list-style: none;
+    width: 20%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -.25em;
+    min-height: 1px;
+    padding-left: 20px;
+    vertical-align: top;
+}
+ul{
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    font: inherit;
+    color: #333333;
+    font-family: 'Graphik Web', sans-serif;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

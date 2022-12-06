@@ -9,5 +9,5 @@ import { User } from './shared/user.model';
 export class AppComponent {
   title = 'witeboard';
 
-  user = new User('Billy', 'billy@gmail.com', 69)
+  user = new User('Billy', 'billy@gmail.com', 69, 'monkeyMan09090!')
 }
