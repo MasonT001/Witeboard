@@ -7,7 +7,7 @@ import { User } from '../user.model';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  user:User = new User("FamilyMarketEnjoyer", 'familymarketlover29@gmail.com', 1985)
+  user:User = new User("FamilyMarketEnjoyer", 'familymarketlover29@gmail.com', 1985, 'applepielover1989!')
 
   constructor() { }
 
