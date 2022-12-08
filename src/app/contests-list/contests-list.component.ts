@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Contest } from '../shared/contest.model';
 
 @Component({
@@ -8,18 +9,8 @@ import { Contest } from '../shared/contest.model';
 })
 export class ContestsListComponent implements OnInit {
 
-  contests: Contest[] = [
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
-    new Contest("Family Market", "Grocery Stores", 10, 0, 1985),
+  contests: Contest[] = [new Contest('Favorite Christmas Movie', 'Christmas', 892, 0, 1969), new Contest('Favorite Halloween Movie', 'halloween', 903, 1, 1969), new Contest('Favorite Tennessee Titans Player', 'Sports', 10847, 2, 1969,), new Contest('Favorite Easter Movie', 'Easter', 90761, 3, 1969)]
 
-  ]
 
   // users: {
   //   username: string;
@@ -28,9 +19,16 @@ export class ContestsListComponent implements OnInit {
   //   username: "John123",
   //   name: "John"
   // }]
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params:any) => {
+      const category = params.category
+      this.contests = this.contests.filter((contests)=> {
+        return contests.category === category
+      })
+      console.log(params)
+    })
   }
 
 }

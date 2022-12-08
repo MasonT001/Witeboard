@@ -1,9 +1,12 @@
-<div class="container">
-    <div class="row align-items-start" style="row-gap: 24px">
-        <div class="col-4" *ngFor="let contest of contests">
-            <div class="card">
-                <h4><b>{{contest.name}}</b></h4>
-            </div>
+<div class="row">
+    <div class="col" *ngFor="let contest of contests">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{contest.name}}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a class="btn btn-primary">View Contest</a>
         </div>
+      </div>
     </div>
-</div>
+  </div>

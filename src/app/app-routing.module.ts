@@ -19,7 +19,9 @@ const routes: Routes = [
   { path: 'contests', component: ContestsListComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'privacypolicy', component: PrivacyPolicyComponent },
-  { path: 'categories', component: CategoriesComponent },
+  { path: 'categories', component: CategoriesComponent, children: [
+    {path: ':category', component: ContestsListComponent} 
+  ]},
   { path: 'signup', component: SignupComponent },
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent },
