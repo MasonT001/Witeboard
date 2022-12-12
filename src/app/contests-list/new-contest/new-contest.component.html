@@ -1,0 +1,16 @@
+<div class="container">
+    <form #contestForm="ngForm">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="name..." required ngModel name="name">
+        <label for="category">Category</label>
+        <select class="form-select" aria-label="Default select example" ngModel name="categories" required>
+            <option selected>Open this select menu</option>
+            <option value="1">Halloween</option>
+            <option value="2">Christmas</option>
+            <option value="3">Sports</option>
+            <option value="4">Easter</option>
+          </select>
+        <label for="description">Description</label>
+        <input type="text" class="form-control" id="description" placeholder="description..." required ngModel name="description">
+    </form>
+</div>

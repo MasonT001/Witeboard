@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Contest } from '../shared/contest.model';
+import { ContestService } from './contest.service';
 
 @Component({
   selector: 'app-contests-list',
@@ -9,26 +10,19 @@ import { Contest } from '../shared/contest.model';
 })
 export class ContestsListComponent implements OnInit {
 
-  contests: Contest[] = [new Contest('Favorite Christmas Movie', 'Christmas', 892, 0, 1969), new Contest('Favorite Halloween Movie', 'halloween', 903, 1, 1969), new Contest('Favorite Tennessee Titans Player', 'Sports', 10847, 2, 1969,), new Contest('Favorite Easter Movie', 'Easter', 90761, 3, 1969)]
+  contests: Contest[] = []
 
-
-  // users: {
-  //   username: string;
-  //   name: string;
-  // }[] = [{
-  //   username: "John123",
-  //   name: "John"
-  // }]
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private contestService: ContestService) { }
 
   ngOnInit(): void {
     this.route.params.subscribe((params:any) => {
       const category = params.category
-      this.contests = this.contests.filter((contests)=> {
+      this.contests = this.contestService.getContests().filter((contests)=> {
         return contests.category === category
       })
       console.log(params)
     })
+
   }
 
 }

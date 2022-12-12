@@ -19,6 +19,7 @@ import { CompanyInfoComponent } from './company-info/company-info.component';
 import { CompanyInfoNavComponent } from './company-info/company-info-nav/company-info-nav.component';
 import { PressComponent } from './company-info/press/press.component';
 import { ImpactComponent } from './company-info/impact/impact.component';
+import { NewContestComponent } from './contests-list/new-contest/new-contest.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ImpactComponent } from './company-info/impact/impact.component';
     CompanyInfoComponent,
     CompanyInfoNavComponent,
     PressComponent,
-    ImpactComponent
+    ImpactComponent,
+    NewContestComponent
   ],
   imports: [
     BrowserModule,
