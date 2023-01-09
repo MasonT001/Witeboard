@@ -15,11 +15,22 @@ export class ContestsListComponent implements OnInit {
   constructor(private route: ActivatedRoute, private contestService: ContestService) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe((params:any) => {
+
+    this.route.params.subscribe((params: any) => {
       const category = params.category
-      this.contests = this.contestService.getContests().filter((contests)=> {
-        return contests.category === category
-      })
+
+      if (params.category) {
+        this.contests = this.contestService.getContests().filter((contests) => {
+          return contests.category === category
+        })
+      } else {
+        // if params.cateogory is undefined, then set this.contests to all the contests 
+        console.log("params category is undefined!")
+        this.contests = this.contestService.getContests()
+      }
+
+      // Otherwise, grab all the contests by that category
+
       console.log(params)
     })
 

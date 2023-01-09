@@ -14,6 +14,7 @@ import { ImpactComponent } from './company-info/impact/impact.component';
 import { TeamComponent } from './company-info/team/team.component';
 import { CareersComponent } from './company-info/careers/careers.component';
 import { NewContestComponent } from './contests-list/new-contest/new-contest.component';
+import { ShowContestComponent } from './contests-list/show-contest/show-contest.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: LandingPageComponent },
@@ -46,7 +47,8 @@ const routes: Routes = [
 
     ]
   },
-  {path: 'new-contest', component: NewContestComponent}
+  {path: 'new-contest', component: NewContestComponent},
+  {path: 'contests/:name', component: ShowContestComponent}
 
 ];
 
